@@ -44,7 +44,7 @@ export class LoginInput extends React.Component <any, Usuario> {
             <div className="continer">
                 <div className="row">
                     <div className="col-12">
-                        <form onSubmit={this.submit}>
+                        <form onSubmit={this.submit} method="post">
                             <div className="form-group ajusta">
                                 <label>Nome Usuario</label>
                                 <input type="text" name="usuario" onChange={this.setValues}

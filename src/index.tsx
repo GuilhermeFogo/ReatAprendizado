@@ -9,5 +9,5 @@ import MyRouter from './router';
 
 ReactDOM.render(
     <MyRouter></MyRouter>,
-    document.getElementById('login')
+    document.getElementById('root')
 );

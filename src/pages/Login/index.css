@@ -1,0 +1,23 @@
+.bg-color1{
+    height: 100vh ;
+    background-color: blueviolet;
+    color: black;
+}
+
+.bg-color2{
+    height: 100vh;
+    background-color: thistle;
+    color: black;
+}
+
+.cor-azul-violeta{
+    color:blueviolet
+}
+
+.cor-azul-ceu{
+    color: #00FFFF;
+}
+
+.margin{
+    margin-top: 10%;
+}

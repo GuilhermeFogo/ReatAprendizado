@@ -1,7 +1,7 @@
 {
     "environment":
     {
-        "local": "localhost:8080/",
+        "local": "http://localhost:8080/",
         "prod":""
     }
 }

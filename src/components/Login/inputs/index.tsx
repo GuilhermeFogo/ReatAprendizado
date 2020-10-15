@@ -44,7 +44,7 @@ export class LoginInput extends React.Component <any, Usuario> {
             <div className="continer">
                 <div className="row">
                     <div className="col-12">
-                        <form onSubmit={this.submit} method="post">
+                        <form onSubmit={this.submit}>
                             <div className="form-group ajusta">
                                 <label>Nome Usuario</label>
                                 <input type="text" name="usuario" onChange={this.setValues}
@@ -56,8 +56,8 @@ export class LoginInput extends React.Component <any, Usuario> {
                                     placeholder="Digite o usuario"  className="form-control" required/>
 
                                 <div className="p-2">
-                                    <input type="submit" className="btn btn-primary" name="enviar"/>
-                                    {/* <input type="button" onClick={this.submit} className="btn btn-primary" name="enviar"/> */}
+                                    {/* <input type="submit" className="btn btn-primary" name="enviar"/> */}
+                                    <input type="button" onClick={this.submit} className="btn btn-primary" name="enviar"/>
                                 </div>
                             </div>
                         </form>

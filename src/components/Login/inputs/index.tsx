@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, Router } from 'react-router-dom';
 import { Usuario } from '../../../modal/Usuario';
 import ServiceUser from '../../../services/serviceUser';
 import './index.css'
@@ -27,16 +28,12 @@ export class LoginInput extends React.Component <any, Usuario> {
             name: this.state.name,
             pass: this.state.pass
         }
-        console.log(user);
-        
-        const promisse = this.serviceUser.Get();
-        promisse.then(a=>{
-            console.log(a.data.forEach(usu => usu.name));
-        }).catch( (r)=>{
-            console.log(r);
-            
+        this.serviceUser.Get()
+        .then(a=>{
+            console.log(a.data);
+        }).catch(error=>{
+            console.error(error);
         })
-           
     }
 
     render() {
